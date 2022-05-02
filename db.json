@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "type": "apple",
+      "color": "green",
+      "weight": 100
+    },
+    {
+      "type": "strawberry",
+      "color": "red",
+      "weight": 55
+    },
+    {
+      "type": "pear",
+      "color": "green",
+      "weight": 80
+    }
+  ]
+}
