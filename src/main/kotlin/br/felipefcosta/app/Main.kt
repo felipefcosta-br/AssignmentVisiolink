@@ -1,6 +1,8 @@
 package br.felipefcosta.app
 
-fun main(args: Array<String>) {
+import br.felipefcosta.data.AssignmentDao
 
+fun main(args: Array<String>) {
+    val assignmentDao = AssignmentDao()
 
 }

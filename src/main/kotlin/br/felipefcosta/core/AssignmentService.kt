@@ -3,10 +3,15 @@ package br.felipefcosta.core
 import br.felipefcosta.Model.DataColor
 import br.felipefcosta.Model.DataObject
 import br.felipefcosta.Model.DataType
+import br.felipefcosta.data.AssignmentDao
 
-class AssignmentService {
+class AssignmentService(private val assignmentDao: AssignmentDao) {
 
-    fun checkDataSetMatch(dataObject: DataObject) {
+    fun getDataSetItems() {
+        val dataItems = assignmentDao
+    }
+
+    private fun checkDataSetMatch(dataObject: DataObject) {
 
         when {
             dataObject.type.uppercase() == DataType.APPLE.toString()
