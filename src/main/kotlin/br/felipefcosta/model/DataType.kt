@@ -1,4 +1,4 @@
-package br.felipefcosta.Model
+package br.felipefcosta.model
 
 enum class DataType {
     APPLE,

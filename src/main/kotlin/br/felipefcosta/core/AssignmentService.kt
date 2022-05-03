@@ -1,8 +1,8 @@
 package br.felipefcosta.core
 
-import br.felipefcosta.Model.DataColor
-import br.felipefcosta.Model.DataObject
-import br.felipefcosta.Model.DataType
+import br.felipefcosta.model.DataColor
+import br.felipefcosta.model.DataObject
+import br.felipefcosta.model.DataType
 import br.felipefcosta.data.AssignmentDao
 
 class AssignmentService(private val assignmentDao: AssignmentDao) {
