@@ -1,5 +1,4 @@
 {
-  "data": [
     {
       "type": "apple",
       "color": "green",
@@ -15,5 +14,4 @@
       "color": "green",
       "weight": 80
     }
-  ]
 }
