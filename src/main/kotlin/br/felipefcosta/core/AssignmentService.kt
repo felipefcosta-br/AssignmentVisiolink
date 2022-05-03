@@ -12,9 +12,24 @@ class AssignmentService(private val assignmentDao: AssignmentDao) {
         checkDataSetMatch(dataItems)
     }
 
+    /*
+    The base data-set matches only the first expression. I created new elements
+    in the data-set to show the matches with other expressions, but I left that commented.
+     */
     private fun checkDataSetMatch(dataObjectList: List<DataObject>) {
 
         for (dataObject in dataObjectList) {
+
+             when {
+                dataObject.type.uppercase() == DataType.APPLE.toString()
+                        && dataObject.color.uppercase() == DataColor.GREEN.toString() -> {
+                    println("Type ${dataObject.type} and color ${dataObject.color} matched")
+                }
+                else -> {
+                    println("Type ${dataObject.type}, color ${dataObject.color} and weight ${dataObject.weight} did not match!")
+                }
+            }
+            /*
             when {
                 dataObject.type.uppercase() == DataType.APPLE.toString()
                         && dataObject.color.uppercase() == DataColor.GREEN.toString() -> {
@@ -30,6 +45,7 @@ class AssignmentService(private val assignmentDao: AssignmentDao) {
                     println("Type ${dataObject.type}, color ${dataObject.color} and weight ${dataObject.weight} did not match!")
                 }
             }
+             */
         }
     }
 }
