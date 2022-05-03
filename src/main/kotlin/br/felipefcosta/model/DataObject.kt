@@ -1,7 +1,6 @@
 package br.felipefcosta.model
 
-class DataObject(
-
+data class DataObject(
     val type: String,
     val color: String,
     val weight: Int
