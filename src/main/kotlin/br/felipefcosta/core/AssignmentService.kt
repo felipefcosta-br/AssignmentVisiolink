@@ -13,13 +13,16 @@ class AssignmentService(private val assignmentDao: AssignmentDao) {
     }
 
     /*
-    The base data-set matches only the first expression. I created new elements
-    in the data-set to show the matches with other expressions, but I left that commented.
+   The given data-set matches only the first expression. I created new
+   elements in the data-set, and I code others expressions to show the
+   cases where that expression matched. I left the original conditional
+   commented.
      */
     private fun checkDataSetMatch(dataObjectList: List<DataObject>) {
 
         for (dataObject in dataObjectList) {
 
+            /*
              when {
                 dataObject.type.uppercase() == DataType.APPLE.toString()
                         && dataObject.color.uppercase() == DataColor.GREEN.toString() -> {
@@ -29,7 +32,9 @@ class AssignmentService(private val assignmentDao: AssignmentDao) {
                     println("Type ${dataObject.type}, color ${dataObject.color} and weight ${dataObject.weight} did not match!")
                 }
             }
-            /*
+
+             */
+
             when {
                 dataObject.type.uppercase() == DataType.APPLE.toString()
                         && dataObject.color.uppercase() == DataColor.GREEN.toString() -> {
@@ -45,7 +50,7 @@ class AssignmentService(private val assignmentDao: AssignmentDao) {
                     println("Type ${dataObject.type}, color ${dataObject.color} and weight ${dataObject.weight} did not match!")
                 }
             }
-             */
+
         }
     }
 }
